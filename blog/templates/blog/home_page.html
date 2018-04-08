@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>What ups I am TIM</title>
+</head>
+<body>
+	<h1></h1>
+	<h1>Welcome to Timathy's introductory of guitar</h1	>
+	<h2>Today, basically we are going to look at the brief and concise concept of Guitar</h2>
+		Here is some pictures:
+	<p>
+		<img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=917017937,3937414241&fm=27&gp=0.jpg">
+	</p>
+	<p>
+		<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3041134822,1257065515&fm=27&gp=0.jpg">
+	</p>
+		The guitar is a fretted musical instrument that usually has six strings.[1] The sound is projected either acoustically, using a hollow wooden or plastic and wood box (for an acoustic guitar), or through electrical amplifier and a speaker (for an electric guitar). It is typically played by strumming or plucking the strings with the fingers, thumb or fingernails of the right hand or with a pick while fretting (or pressing against the frets) the strings with the fingers of the left hand. The guitar is a type of chordophone, traditionally constructed from wood and strung with either gut, nylon or steel strings and distinguished from other chordophones by its construction and tuning. The modern guitar was preceded by the gittern, the vihuela, the four-course Renaissance guitar, and the five-course baroque guitar, all of which contributed to the development of the modern six-string instrument.
+	<br>
+	<br>
+	<button>Awesome</button>
+	<button>Not good at all</button>
+	<h2>Leave a Comment</h2>
+	<form method="POST" action="{% url 'blog:home_page' %}">
+	 	{% csrf_token %}
+		<h3>Post comment</h3>
+		<textarea name="comment" placeholder="Please Enter Your Comment"></textarea>
+		<h3>Post Username</h3>
+		<input placeholder="Hey guy, what's your name?" type="text" name="username">
+		<input type="submit" value="Post Me!">
+	</form>
+</body>
+</html>
