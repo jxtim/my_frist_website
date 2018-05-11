@@ -183,7 +183,7 @@
 				<div class="row row-bottom-padded-md">
 					<div class="col-md-12 text-center heading-section">
 						<h3>The tirp to Benson's home.</h3>
-						<p>This Sunday. I went to Benson's house and have fun with im</p>
+						<p>This Sunday. I went to Benson's house and had fun with im</p>
 
 						<h1>Leave A Comment</h1>
 						<form method="POST" action="">
@@ -194,7 +194,7 @@
 							<input class="btn btn-primary btn-lg" type="submit" name="">
 						</form>
 						<h1>Comments</h1>
-						<p>Comment: {{posted_comment}}</p>
+						<p> Username: {{comment.user}} <br><br>Commet:{{comment.comment}} </p>
 
 					</div>
 					<div class="col-md-12 text-center">
@@ -523,6 +523,7 @@
 
 	<!-- Main JS -->
 	<script src="js/main.js"></script>
+	User {{comment.user}} says: {{comment.comment}}
 
 	</body>
 </html>
