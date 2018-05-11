@@ -182,8 +182,20 @@
 			<div class="container">
 				<div class="row row-bottom-padded-md">
 					<div class="col-md-12 text-center heading-section">
-						<h3>Grab this free template now.</h3>
-						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						<h3>The tirp to Benson's home.</h3>
+						<p>This Sunday. I went to Benson's house and have fun with im</p>
+
+						<h1>Leave A Comment</h1>
+						<form method="POST" action="">
+							{% csrf_token %}
+							<input type="text" name="username" placeholder="Type your usernmae" name=""><br><br>
+
+							<textarea name="comment" placeholder="Whats your comment"></textarea><br><br>
+							<input class="btn btn-primary btn-lg" type="submit" name="">
+						</form>
+						<h1>Comments</h1>
+						<p>Comment: {{posted_comment}}</p>
+
 					</div>
 					<div class="col-md-12 text-center">
 						<p><a href="http://freehtml5.co/" class="btn btn-primary btn-lg">Download me please</a></p>
@@ -479,7 +491,7 @@
 								<a href="#"><i class="icon-dribbble2"></i></a>
 								<a href="#"><i class="icon-youtube"></i></a>
 							</p>
-							<p>Copyright 2016 Free Html5 <a href="#">Pentagon</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a> / Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+							<p>Copyright 2016 Free Html5 <a href="#">TI</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a> / Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
 						</div>
 					</div>
 				</div>
